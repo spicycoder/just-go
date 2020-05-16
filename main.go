@@ -1,15 +1,10 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
-	sum, diff := calculate(10, 5)
-	fmt.Println(sum)
-	fmt.Println(diff)
-}
+	// Loop over collection
+	slice := []int{1, 2, 3}
 
-func calculate(x int, y int) (int, int) {
-	return x + y, x - y
+	for i, v := range slice {
+		println(i, v)
+	}
 }
