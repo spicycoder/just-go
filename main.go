@@ -2,16 +2,14 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/spicycoder/just-go/models"
 )
 
 func main() {
-	u := models.User{
-		ID:        1,
-		FirstName: "John",
-		LastName:  "Doe",
-	}
+	sum, diff := calculate(10, 5)
+	fmt.Println(sum)
+	fmt.Println(diff)
+}
 
-	fmt.Println(u)
+func calculate(x int, y int) (int, int) {
+	return x + y, x - y
 }
