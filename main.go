@@ -1,0 +1,26 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	// declaration, initialization
+	var i int
+	i = 18
+	fmt.Println(i)
+
+	// declaration + initialization
+	var f float32 = 3.1415
+	fmt.Println(f)
+
+	// implicit initialization
+	firstName := "John"
+	fmt.Println(firstName)
+
+	// complex data type
+	c := complex(3, 4)
+	fmt.Println(c)
+
+	real, imaginary := real(c), imag(c)
+	println(real, imaginary)
+}
