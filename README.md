@@ -371,3 +371,32 @@ map[]
 ```
 
 ---
+
+## Struct
+
+```go
+type user struct {
+    ID        int
+    FirstName string
+    LastName  string
+    }
+
+    var u user
+    u = user{
+        ID:        1,
+        FirstName: "John",
+        LastName:  "Doe",
+    }
+
+    fmt.Println(u)
+    fmt.Println(u.FirstName)
+```
+
+> Result
+
+```sh
+{1 John Doe}
+john
+```
+
+---
