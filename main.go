@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	firstName := "John"
-	firstNamePointer := &firstName
-
-	fmt.Println(firstNamePointer)
-	fmt.Println(*firstNamePointer)
-	fmt.Println(&firstNamePointer)
+	slice := []int{1, 2, 3, 4, 5, 6}
+	fmt.Println(slice)
+	fmt.Println(slice[:])
+	fmt.Println(slice[1:])
+	fmt.Println(slice[:4])
+	fmt.Println(slice[2:3])
 }
